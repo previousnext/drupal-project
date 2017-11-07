@@ -115,3 +115,27 @@ $settings['rebuild_access'] = TRUE;
  * directory.
  */
 $settings['skip_permissions_hardening'] = TRUE;
+
+// Disables installing modules via browser.
+$settings['allow_authorize_operations'] = FALSE;
+
+// Set private files.
+$settings['file_private_path'] = 'sites/default/files/private';
+
+// Trust localhost.
+$settings['trusted_host_patterns'][] = '^127\.0\.0\.1$';
+$settings['trusted_host_patterns'][] = '^localhost$';
+
+$databases['default']['default'] = array (
+  'database' => 'local',
+  'username' => 'drupal',
+  'password' => 'drupal',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = $app_root . '../config-sync';
+$settings['hash_salt'] = '4ffz70dR97BSUre_y3sDeqeTllxMtgoS_VMW1nF5bcQ2qaSnDt0L4WRe3G681qV5ZeZ5dgmdBg';

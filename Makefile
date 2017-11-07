@@ -14,8 +14,9 @@ init:
 	composer install --prefer-dist --no-progress --no-suggest --no-interaction --optimize-autoloader
 
 devify:
-	chmod +w $(APP_ROOT)/sites/default
-	cp $(APP_ROOT)/sites/example.settings.local.php $(APP_ROOT)/sites/default/settings.local.php
+	chmod -R +w $(APP_ROOT)/sites/default
+	mkdir -p $(APP_ROOT)/sites/default/files/private
+	cp settings.local.php $(APP_ROOT)/sites/default/settings.php
 
 install:
 	$(DRUSH) site-install --db-url=$(DB_URL)
