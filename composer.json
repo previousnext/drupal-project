@@ -1,6 +1,6 @@
 {
-    "name": "pnx/drupal-core-project",
-    "description": "A starter kit for working on Drupal core.",
+    "name": "previousnext/drupal-project",
+    "description": "A starter kit for Drupal projects.",
     "type": "project",
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
