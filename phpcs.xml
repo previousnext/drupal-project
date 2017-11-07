@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="agov">
+  <description>Default PHP CodeSniffer configuration for Agov.</description>
+  <file>.</file>
+  <arg name="extensions" value="inc,install,module,php,profile,test,theme"/>
+
+  <!--Exclude third party code.-->
+  <exclude-pattern>./app/*</exclude-pattern>
+  <exclude-pattern>./bin/*</exclude-pattern>
+  <exclude-pattern>./build/*</exclude-pattern>
+  <exclude-pattern>./vendor/*</exclude-pattern>
+
+  <!--Exclude non-php files.-->
+  <exclude-pattern>*.md</exclude-pattern>
+
+  <!--Exclude settings files.-->
+  <exclude-pattern>*/settings*.php</exclude-pattern>
+
+  <!-- Drupal sniffs -->
+  <rule ref="vendor/drupal/coder/coder_sniffer/Drupal/ruleset.xml"/>
+
+</ruleset>

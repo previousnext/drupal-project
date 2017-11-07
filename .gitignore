@@ -1,0 +1,63 @@
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.tgz
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+Thumbs.db
+
+# Ignore Drupal stuff #
+########################
+/app/CHANGELOG.txt
+/app/COPYRIGHT.txt
+/app/INSTALL*.txt
+/app/LICENSE.txt
+/app/MAINTAINERS.txt
+/app/README.txt
+/app/update.php
+/app/sites/all/modules/README.txt
+/app/sites/all/themes/README.txt
+/app/sites/README.txt
+/app/UPGRADE.txt
+/app/core
+/app/modules/contrib
+/app/modules/local
+/app/profiles/contrib
+/app/sites/default/files
+/app/sites/simpletest
+/app/themes/contrib
+
+# Continuous Integration #
+##########################
+/bin
+/vendor
+/app/test-output.html
+/build/logs
+
+
+# Dev files #
+#############
+.idea
+.php
+/app/sites/default/settings.local.php
+/app/sites/default/settings.local.*.php
+/mariadb-init
+/drush/contrib
