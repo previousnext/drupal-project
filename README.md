@@ -2,6 +2,12 @@
 
 Use this project as a template for working on Drupal core.
 
+To create a new project, run the following:
+
+```bash
+composer create-project -s dev previousnext/drupal-project myproject
+```
+
 ## Docker
 
 You will need to install Docker.
