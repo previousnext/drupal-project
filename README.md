@@ -1,4 +1,4 @@
-# Drupal Core Project
+# Drupal Project
 
 Use this project as a template for working on Drupal core.
 
