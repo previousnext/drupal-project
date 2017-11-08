@@ -4,6 +4,23 @@ Use this project as a template for working on Drupal core.
 
 To create a new project, run the following:
 
+## Requirements
+
+You will neeed PHP 7.1+ and [Composer][5].
+
+### MacOS
+
+Download and install Homebrew follow the [online instructions][4].
+
+Add the php tap:
+
+```bash
+brew tap homebrew/homebrew-php
+brew install composer php71 php71-mcrypt php71-xdebug
+```
+
+## Installing
+
 ```bash
 composer create-project -s dev previousnext/drupal-project myproject
 ```
@@ -61,14 +78,6 @@ To set up common developer options, run:
 make devify
 ```
 
-Then uncomment the following lines in `app/sites/default/settings.php`
-
-```php
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
-}
-```
-
 ## Testing
 
 To run tests, run:
@@ -80,4 +89,5 @@ make test
 [1]: https://www.docker.com/docker-mac
 [2]: https://www.docker.com/docker-windows
 [3]: http://gnuwin32.sourceforge.net/packages/make.htm
-
+[4]: https://brew.sh/
+[5]: https://getcomposer.org
