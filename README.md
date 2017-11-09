@@ -2,8 +2,6 @@
 
 Use this project as a template for working on Drupal core.
 
-To create a new project, run the following:
-
 ## Requirements
 
 Most of the dev tools are in the php Docker container, but you will need one or two
