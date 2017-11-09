@@ -1,6 +1,6 @@
 # Drupal Project
 
-Use this project as a template for working on Drupal core.
+Use this project as a template for working on Drupal core and contrib modules.
 
 ## Requirements
 
@@ -97,6 +97,16 @@ To set up common developer options, run:
 
 ```bash
 make devify
+```
+
+## Install a contrib module
+
+The easiest way to install a contrib module to work on is via composer.
+
+For example, to work on pathauto, type the following:
+
+```
+composer require drupal/pathauto --prefer-source
 ```
 
 ## Testing
