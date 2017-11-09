@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5e4f362f0bc73f308c4a00b7ad14fff",
+    "content-hash": "029ff307939a20a434073c6d701690b6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -823,12 +823,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "7a6005ee4b664d186943b0db8279fce84796f07b"
+                "reference": "e3e367409f670b5b9532091738b4b63be2c80a6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/7a6005ee4b664d186943b0db8279fce84796f07b",
-                "reference": "7a6005ee4b664d186943b0db8279fce84796f07b",
+                "url": "https://api.github.com/repos/drupal/core/zipball/e3e367409f670b5b9532091738b4b63be2c80a6d",
+                "reference": "e3e367409f670b5b9532091738b4b63be2c80a6d",
                 "shasum": ""
             },
             "require": {
@@ -1003,7 +1003,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-11-06T13:46:11+00:00"
+            "time": "2017-11-08T02:01:36+00:00"
         },
         {
             "name": "drush/drush",
