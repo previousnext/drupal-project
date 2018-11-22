@@ -88,7 +88,7 @@ dc exec app bash
 To initialise your local dev environment run the following:
 
 ```bash
-make init install
+make install
 ```
 
 ## Developer Options
