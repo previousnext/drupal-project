@@ -82,7 +82,7 @@ For simplicity, run all commands from within the php container. You can get
 shell access via:
 
 ```
-dc exec php bash
+dc exec app bash
 ```
 
 To initialise your local dev environment run the following:

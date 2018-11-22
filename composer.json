@@ -6,24 +6,20 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "composer/installers": "~1.0",
-        "cweagans/composer-patches": "~1.5",
-        "drupal/core": "8.5.x-dev",
-        "drush/drush": "^8.1.15"
+        "composer/installers": "~1.6",
+        "cweagans/composer-patches": "~1.6",
+        "drupal/core": "8.7.x-dev"
     },
     "require-dev": {
-        "behat/mink": "1.7.x-dev",
-        "behat/mink-goutte-driver": "~1.2",
-        "drupal-composer/drupal-scaffold": "^2.3",
-        "drupal/coder": "~8",
-        "grasmash/drupal-security-warning": "^1.1",
-        "jcalderonzumba/gastonjs": "~1.0.2",
-        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-        "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": "~4.8"
+        "drush/drush": "~9.5",
+        "webflo/drupal-core-require-dev": "~8.7.0"
     },
     "config": {
-        "bin-dir": "bin/"
+        "bin-dir": "bin/",
+        "preferred-install": {
+            "drupal/*": "source"
+        },
+        "sort-packages": true
     },
     "repositories": [
         {
@@ -59,6 +55,6 @@
         "composer-exit-on-patch-failure": true
     },
     "scripts": {
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        "phpcs": "cd app && phpcs `git diff 8.7.x --name-only --diff-filter=AM`"
     }
 }

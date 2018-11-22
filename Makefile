@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-APP_ROOT=./app
+APP_ROOT=$(PWD)/app
 APP_URL=http://127.0.0.1
 DB_URL=mysql://drupal:drupal@127.0.0.1/local
 DRUSH=./bin/drush -r $(APP_ROOT) -l $(APP_URL)
@@ -18,8 +18,8 @@ devify:
 	mkdir -p $(APP_ROOT)/sites/default/files/private
 	cp settings.local.php $(APP_ROOT)/sites/default/settings.php
 
-install:
-	$(DRUSH) site-install --db-url=$(DB_URL)
+install: init mkdirs devify
+	$(DRUSH) si -y
 
 mkdirs:
 	mkdir -p $(APP_ROOT)/sites/default/files/tmp $(APP_ROOT)/sites/default/files/private
@@ -28,7 +28,7 @@ updb:
 	$(DRUSH) updb -y
 
 entity-updates:
-	$(DRUSH) entity-updates -y
+	$(DRUSH) entity:updates -y
 
 cr:
 	$(DRUSH) cr

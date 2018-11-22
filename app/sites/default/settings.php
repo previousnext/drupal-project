@@ -137,5 +137,5 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = $app_root . '/../config-sync';
+$config_directories['sync'] = $app_root . '../config-sync';
 $settings['hash_salt'] = '4ffz70dR97BSUre_y3sDeqeTllxMtgoS_VMW1nF5bcQ2qaSnDt0L4WRe3G681qV5ZeZ5dgmdBg';
